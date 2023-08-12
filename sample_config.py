@@ -28,12 +28,12 @@ class Config(object):
     # المنطقه الزمنيه احصل عليها من هنا  http://www.timezoneconverter.com/cgi-bin/findzone.tzc
     TZ = os.environ.get("TZ", "Asia/Baghdad")
     # رابط الريبو
-    UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", "https://github.com/sbb-b/jmrobot")
+    UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", "https://github.com/jaketoo/jakootel")
     # ملفات خارجيه اضافيه
     EXTERNAL_REPO = os.environ.get("EXTERNAL_REPO", None)
     if bool(EXTERNAL_REPO and (EXTERNAL_REPO.lower() != "false")):
         if not url(EXTERNAL_REPO):
-            EXTERNAL_REPO = "https://github.com/jmthonr/JmPlugins"
+            EXTERNAL_REPO = "https://github.com/jaketoo/jakootel"
     else:
         EXTERNAL_REPO = None
     # فارات الميوزك
@@ -75,7 +75,7 @@ class Config(object):
     TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "jmthon")
     # هنا خلفيه مال تلجراف او بعض الاوامر
     THUMB_IMAGE = os.environ.get(
-        "THUMB_IMAGE", "https://graph.org/file/524d0431f17854870e678.jpg"
+        "THUMB_IMAGE", "https://telegra.ph/file/1860b3cdf99b31e50dab5.jpg"
     )
     # هنا اسم الملف الي ما تريده يتثبت عندك
     NO_LOAD = list(os.environ.get("NO_LOAD", "").split())
@@ -166,4 +166,4 @@ class Development(Config):
     LOGGER = True
 
 
-# https:t.me/jmthon
+# https:t.me/mvhmed
